@@ -49,3 +49,5 @@ systemctl status status-client
         Use vnstat for traffic statistics, linux only
 ```
 
+docker run -d --net=host registry.cn-hongkong.aliyuncs.com/aiastia/nodestatus-client-go:latest -dsn wss://1:2@3
+
