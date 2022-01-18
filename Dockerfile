@@ -8,7 +8,7 @@ RUN apt update \
      
 RUN mkdir -p /node
     cd node 
-    wget "https://github.com/cokemine/nodestatus-client-go/releases/latest/download/status-client_linux_amd64.tar.gz"
+    wget https://github.com/cokemine/nodestatus-client-go/releases/latest/download/status-client_linux_amd64.tar.gz
     tar -zxvf status-client_linux_amd64.tar.gz status-client
     rm -rf status-client_linux_amd64.tar.gz
     chmod +x /node/status-client
