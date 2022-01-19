@@ -27,6 +27,8 @@ mv status-client /usr/local/NodeStatus/client/
 chmod +x /usr/local/NodeStatus/client/status-client
 echo 'DSN="wss://username:password@tz.mydomain.com"' > /usr/local/NodeStatus/client/config.conf
 wget https://raw.githubusercontent.com/cokemine/nodestatus-client-go/master/service/status-client.service -P /usr/lib/systemd/system/
+wget https://raw.githubusercontent.com/fork-bak/nodestatus-client-go/master/service/status-client-vnstat.service -O status-client.service -P /usr/lib/systemd/system/
+
 systemctl enable status-client
 systemctl start status-client
 systemctl status status-client
